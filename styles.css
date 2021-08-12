@@ -33,6 +33,9 @@ body {
 .navbar-link a {
   font-size: 60px;
 }
+.nav-link {
+  margin-left: 15px;
+}
 
 /*Balance Carta*/
 .card-balance-carta {
