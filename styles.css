@@ -1,6 +1,5 @@
 body {
-  background-color: gold;
-  height: 1500px;
+  background-color: gold
 }
 
 * {
@@ -9,20 +8,19 @@ body {
   margin: 0;
 }
 
-.balance {
+.balance{
   background-color: white;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 40px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .3);
 }
-.balance h5 {
+.balance h5{
   display: flex;
   justify-content: space-between;
 }
 
 /*Header*/
-
 .navbar {
   height: 150px;
   background-color: aquamarine;
@@ -32,9 +30,6 @@ body {
 }
 .navbar-link a {
   font-size: 60px;
-}
-.nav-link {
-  margin-left: 15px;
 }
 
 /*Balance Carta*/
@@ -60,25 +55,25 @@ body {
   flex-direction: column;
 }
 
-.filtros {
+.filtros{
   background-color: white;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 40px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .3);
 }
 
-.container-btn-ocultar-filtros {
+.container-btn-ocultar-filtros{
   display: flex;
   justify-content: space-between;
 }
 
-.operaciones {
+.operaciones{
   background-color: white;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 40px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .3);
 }
 
 /*Main Balance*/
@@ -90,49 +85,30 @@ body {
   height: 800px;
 }
 
+
 /*REPORTES STYLES*/
 
-/*HOJA DE REPORTES INSUFICIENTES*/
-.card-insuficiente {
-  width: 900px;
-  height: 750px;
-  border-radius: 10px;
-  color: black;
-  padding: 10px;
-  background-color: aliceblue;
+.card{
+  width: 889px;
+  height: 652px;
+  border-radius: 6px;
+ color: #4a4a4a;
+    display: block;
+    padding: 1.25rem;
 }
-.card-title {
+.card-title{
   font-size: 40px;
 }
-.operaciones-insuficientes {
+h4{
   font-size: 24px;
   text-align: center;
 }
-.card-text {
+.card-text{
   font-size: 16px;
   text-align: center;
 }
-.imagen-reportes {
-  margin-left: 100px;
+.imagen-reportes{
+  margin: 50px;
   height: 350px;
-  margin: 80px;
-}
-.container {
-  margin-top: 100px;
-}
-
-/*HOJA DE REPORTES*/
-.card-reportes {
-  width: 900px;
-  height: 900px;
-  border-radius: 10px;
-  color: black;
-  padding: 10px;
-  background-color: aliceblue;
-}
-.titulo-reportes-h4 {
-  font-size: 24px;
-}
-h3 {
-  font-size: 16px;
+  align-content: center;
 }
