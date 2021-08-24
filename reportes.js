@@ -1,10 +1,7 @@
-function montos() {
-let numeros = {
-   restar: function restarMontos(monto1, monto2) {
-     return (monto1-monto2)
-   }
+var monto1 = document.getElementById("montoPositivo");
+var monto2 = document.getElementById("montoNegativo");
+var montoTotal = document.getElementById("montoTotal");
+var restarMontos = function (monto1, monto2) {
+    montoTotal = monto1 - monto2;
 };
-
-document.getElementById("montoTotal").innerText(`${montos}`);
-
-console.log(montos);
+restarMontos();
