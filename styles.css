@@ -22,7 +22,6 @@ body {
 
 /*Header*/
 .navbar {
-  height: 150px;
   background-color: aquamarine;
 }
 .navbar-brand {
@@ -105,4 +104,21 @@ button a {
   color: white;
   text-decoration: none;
   list-style: none;
+}
+
+#balanceSection{
+  margin: 70px;
+}
+
+.btn-editar-op{
+  margin-right: 5px;
+}
+
+.btn-nueva-op a:hover {
+  color: white;
+}
+
+.header-tabla-op{
+  font-weight: bold;
+  margin-bottom: 5px;
 }
