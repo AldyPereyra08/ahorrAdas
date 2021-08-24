@@ -10,8 +10,13 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <script
+      src="https://kit.fontawesome.com/7dbcfcb415.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/7dbcfcb415.js" crossorigin="anonymous"></script>
     <title>Reportes</title>
   </head>
   <body>
@@ -19,7 +24,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><i class="fas fa-wallet"></i>AhorrADAs</a>
+        <a class="navbar-brand" href="#"
+          ><i class="fas fa-wallet"></i>AhorrADAs</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -39,10 +46,14 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="categorias.html"><i class="fas fa-tag"></i>Categorías</a>
+              <a class="nav-link" href="categorias.html"
+                ><i class="fas fa-tag"></i>Categorías</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="reportes.html"><i class="fas fa-chart-pie"></i>Reportes</a>
+              <a class="nav-link" href="reportes.html"
+                ><i class="fas fa-chart-pie"></i>Reportes</a
+              >
             </li>
           </ul>
         </div>
@@ -57,7 +68,7 @@
         <div class="col">
           <main>
             <!---CARTA DE REPORTES INSUFICIENTES-->
-            <div class="card-insuficiente">
+            <div class="card-insuficiente" style="display: none">
               <div class="card-body">
                 <h2 class="card-title">Reportes</h2>
                 <img
@@ -73,83 +84,77 @@
             </div>
 
             <!---CARTA DE REPORTES ENTEROS-->
-            <div class="card-reportes" style="display: none">
-              <div class="card-body">
-                <h2 class="card-title">Reportes</h2>
-                <div class="container">
-                  <h4 class="titulo-reportes-h4">Resumen</h4>
-                  <div class="row">
-                    <div class="col">
-                      <h3>Categoría con mayor ganancia</h3>
-                      <h3>Categoría con mayor gasto</h3>
-                      <h3>Categoría con mayor balance</h3>
-                      <h3>Mes con mayor ganancia</h3>
-                      <h3>Mes con mayor gasto</h3>
-                    </div>
-                    <div class="col"></div>
-                    <div class="col">
-                      <span id="categoria"></span>
-                      <span id="categoria"></span>
-                      <span id="categoria"></span>
-                      <span id="categoria"></span>
-                      <span id="categoria"></span>
-                    </div>
-                    <div class="col">
-                      <span id="montoPositivo"></span>
-                      <span id="montoNegativo"></span>
-                      <span id="montoTotal"></span>
-                      <span id="fechaActual"></span>
-                      <span id="fechaActual"></span>
-                    </div>
+            <div class="card-reportes">
+              <div class="container">
+                <h4 class="titulo-reportes-h4">Reportes</h4>
+                <div class="row">
+                  <div class="col">
+                    <h3>Categoría con mayor ganancia</h3>
+                    <h3>Categoría con mayor gasto</h3>
+                    <h3>Categoría con mayor balance</h3>
+                    <h3>Mes con mayor ganancia</h3>
+                    <h3>Mes con mayor gasto</h3>
+                  </div>
+                  <div class="col"></div>
+                  <div class="col">
+                    <p id="categoria">CATEGORIA</p>
+                    <p id="categoria">CATEGORIA</p>
+                    <p id="categoria">CATEGORIA</p>
+                    <p id="fechaActual"></p>
+                    <p id="fechaActual"></p>
+                  </div>
+                  <div class="col">
+                    <p id="montoPositivo">1300</p>
+                    <p id="montoNegativo">200</p>
+                    <p id="montoTotal"></p>
+                    <p id="montoPositivo">1300</p>
+                    <p id="montoNegativo">200</p>
                   </div>
                 </div>
-                <div class="container">
-                  <h4 class="titulo-reportes-h4">Totales por categorías</h4>
-                  <div class="row">
-                    <div class="col">
-                      <h3>Categoría</h3>
-                      <h3>PONER CATEGORIA</h3>
-                      <h3>PONER CATEGORIA</h3>
-                    </div>
-                    <div class="col">
-                      <h3>Ganancias</h3>
-                      <span></span>
-                      <span></span>
-                    </div>
-                    <div class="col">
-                      <h3>Gastos</h3>
-                      <span></span>
-                      <span></span>
-                    </div>
-                    <div class="col">
-                      <h3>Balance</h3>
-                      <span></span>
-                      <span></span>
-                    </div>
+              </div>
+              <div class="container">
+                <h4 class="titulo-reportes-h4">Totales por categorías</h4>
+                <div class="row">
+                  <div class="col">
+                    <h3>Categoría</h3>
+                    <h3>PONER CATEGORIA</h3>
+                    <h3>PONER CATEGORIA</h3>
+                  </div>
+                  <div class="col">
+                    <h3>Ganancias</h3>
+                    <p id="montoPositivo">1300</p>
+                    <p id="montoPositivo">1300</p>
+                  </div>
+                  <div class="col">
+                    <h3>Gastos</h3>
+                    <p id="montoNegativo">200</p>
+                    <p id="montoNegativo">200</p>
+                  </div>
+                  <div class="col">
+                    <h3>Balance</h3>
+                    <p id="montoTotal"></p>
                   </div>
                 </div>
-                <div class="container">
-                  <h4 class="titulo-reportes-h4">Totales por mes</h4>
-                  <div class="row">
-                    <div class="col">
-                      <h3>Mes</h3>
-                      <h3>PONER FECHA</h3>
-                    </div>
-                    <div class="col">
-                      <h3>Ganancias</h3>
-                      <span></span>
-                      <span></span>
-                    </div>
-                    <div class="col">
-                      <h3>Gastos</h3>
-                      <span></span>
-                      <span></span>
-                    </div>
-                    <div class="col">
-                      <h3>Balance</h3>
-                      <span></span>
-                      <span></span>
-                    </div>
+              </div>
+              <div class="container">
+                <h4 class="titulo-reportes-h4">Totales por mes</h4>
+                <div class="row">
+                  <div class="col">
+                    <h3>Mes</h3>
+                    <h3>PONER FECHA</h3>
+                  </div>
+                  <div class="col">
+                    <h3>Ganancias</h3>
+                    <p id="montoPositivo">1300</p>
+                  </div>
+                  <div class="col">
+                    <h3>Gastos</h3>
+                    <p id="montoNegativo">200</p>
+                  </div>
+                  <div class="col">
+                    <h3>Balance</h3>
+                    <p id="montoTotal"></p>
+                  </div>
                 </div>
               </div>
             </div>
