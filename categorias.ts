@@ -1,12 +1,29 @@
+type LocalStorage = {
+  Categories?: Category[];
+};
+
 type Category = {
   id: number;
+  name: string;
   title: string;
   slug: string;
 };
 
 const formAddCategory = document.getElementById("form-add-category");
+const storage: LocalStorage = {};
 
-formAddCategory.addEventListener("submit", (e) => {
+const createCategory = (e) => {
   e.preventDefault();
-  alert("funciona");
-});
+
+  const form = e.target;
+  const newCategoryName: string = form.name.value;
+
+  const newCategory: Category = {
+    id: 1,
+    name: newCategoryName,
+    slug: strigify(newCategoryName),
+    title: "",
+  };
+  console.log(newCategory);
+};
+formAddCategory.addEventListener("submit", createCategory);
